@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic);*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }  
+ @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+ 
+ 
+ body{margin: 0;}
+
+ div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  right: auto;
+  margin: 0;
+  
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slidy infinite; 
+}
+     
+ 
+ 
+ /*header bölümü*/
+ header > nav > a > img{
+     
+     width: 9rem;
+     height:3rem;
+ 
+ 
+ }
+ 
+ .up{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 0.5rem 1rem 0.5rem 0rem;
+ }
+ 
+ .up > ul > li > a,
+ .up > a{
+ 
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     text-transform: uppercase;    
+ }
+
+ 
+ .up > ul{
+      list-style: none;
+      display: flex;
+      gap: 7rem;
+     
+ }
+ a.button {
+    display:block;
+    float:left;
+    margin: 5px;
+    color:#fff;
+    text-align:center;
+    font-size:15px;
+    cursor: pointer;
+    text-decoration: none;
+    padding:7px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+      inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+      inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+      inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+      inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+      inset 0 1px rgba(255,255,255,0.3),
+      inset 0 10px rgba(255,255,255,0.2),
+      inset 0 10px 20px rgba(255,255,255,0.25),
+      inset 0 -15px 30px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
+      inset 0 1px rgba(255,255,255,0.3),
+      inset 0 10px rgba(255,255,255,0.2),
+      inset 0 10px 20px rgba(255,255,255,0.25),
+      inset 0 -15px 30px rgba(0,0,0,0.3);
+  }
+  
+  a.button:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+  }
+ 
+ /*----------------------*/
+ .down{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    margin: 6rem 0rem 6rem 0rem;
+    
+ }
+ 
+ .down > ul > li > a ,
+ .down > a{
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+      
+ 
+ }
+ 
+ .down > ul{
+   list-style: none;
+   display: flex;
+   gap:3rem;
+ 
+ }
+ 
+ /*main bölümü*/
+ 
+ 
+ /*footer bölümü*/
+ 
+ footer{
+     position: fixed;
+     width: 100%;
+     flex-direction:column;
+ }
+ 
+ 
+ 
+ footer > article{
+   position: fixed;
+   display: flex;
+   justify-content: space-around;
+   bottom: 0;
+   width: 100%;
+ 
+}
+footer > article > p{
+   color: rgb(255, 255, 255);
+
+}
+
+footer > article > a > img{
+    width: 150px;
+    height: auto;
+}

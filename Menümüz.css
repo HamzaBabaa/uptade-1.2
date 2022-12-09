@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        background-image: url(images/Hakkımızda-arkaplan.jpg);
+        background-size: cover;
+       
+       
+}
+
+
+
+/*header bölümü*/
+header > nav > a > img{
+     
+    width: 9rem;
+    height:3rem;
+
+
+}
+
+.up{
+   position: fixed;
+   display: flex;
+   justify-content: space-around;
+   
+   margin: 1rem 1rem 1rem 0rem;
+}
+
+.up > ul > li > a,
+.up > a{
+
+    color: rgb(70, 59, 59);
+    text-decoration: none;
+    text-transform: uppercase;    
+}
+
+
+.up > ul{
+     list-style: none;
+     display: flex;
+     gap: 7rem;
+    
+}
+a.button {
+   display:block;
+   float:left;
+   margin: 5px;
+   color:#fff;
+   text-align:center;
+   font-size:15px;
+   cursor: pointer;
+   text-decoration: none;
+   padding:10px;
+   border: 1px solid rgba(0,0,0,0.4);
+   border-bottom: 3px solid rgba(0,0,0,0.5);
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   box-shadow: 0 2px 8px rgba(222, 241, 114, 1), /* Exterior Shadow */
+     inset 0 1px rgba(224, 241, 66, 1), /* Top light Line */
+     inset 0 10px rgba(222, 223, 174, 1), /* Top Light Shadow */
+     inset 0 10px 20px rgb(176, 201, 131,1), /* Sides Light Shadow */
+     inset 0 -15px 30px rgba(176, 201, 131,1); /* Dark Background */
+   -webkit-box-shadow: 0 2px 8px rgba(222, 241, 114, 1),
+     inset 0 1px rgba(224, 241, 66, 1),
+     inset 0 10px rgba(222, 223, 174, 1),
+     inset 0 10px 20px rgba(176, 201, 131,1),
+     inset 0 -15px 30px rgba(176, 201, 131,1);
+   -moz-box-shadow: 0 2px 8px rgba(222, 241, 114, 1),
+     inset 0 1px rgba(224, 241, 66, 1),
+     inset 0 10px rgba(222, 223, 174, 1),
+     inset 0 10px 20px rgba(176, 201, 131,1),
+     inset 0 -15px 30px rgba(176, 201, 131,1);
+ }
+ 
+ a.button:hover {
+   opacity: 0.7;
+   filter: alpha(opacity=70);
+   -moz-opacity:0.7;
+   -khtml-opacity: 0.7;
+ }
+
+/*----------------------*/
+.down{
+   position: fixed;
+   display: flex;
+   justify-content: space-around;
+   margin: 6rem 0rem 6rem 0rem;
+   
+}
+
+.down > ul > li > a ,
+.down > a{
+   color: rgb(70, 59, 59);
+   text-decoration: none;
+   text-transform: uppercase;
+     
+
+}
+
+.down > ul{
+  list-style: none;
+  display: flex;
+  gap:3rem;
+
+}
+
+/*main bölümü*/
+
+
+/*footer bölümü*/
+
+footer{
+    position: fixed;
+    width: 100%;
+    flex-direction:column;
+}
+
+
+
+footer > article{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+
+}
+footer > article > p{
+  color: rgb(70, 59, 59);
+
+}
+
+footer > article > a > img{
+   width: 150px;
+   height: auto;
+}
